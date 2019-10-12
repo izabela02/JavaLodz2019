@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form example</title>
+</head>
+<body>
+  <table id="user-list">
+    <tr>
+      <th>Imię</th>
+      <th>Nazwisko</th>
+      <th>Wiek</th>
+      <th>Obywatelstwo</th>
+    </tr>
+    <!--<tr>-->
+      <!--<td>Jan</td>-->
+      <!--<td>Nowak</td>-->
+      <!--<td>35</td>-->
+      <!--<td>polskie</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+      <!--<td>John</td>-->
+      <!--<td>Smith</td>-->
+      <!--<td>29</td>-->
+      <!--<td>british</td>-->
+    <!--</tr>-->
+  </table>
+
+  <hr />
+
+  <form>
+    <label for="name">Imię:</label>
+    <input id="name"
+           type="text">
+
+    <label for="surname">Nazwisko:</label>
+    <input id="surname"
+           type="text">
+
+    <label for="age">Wiek:</label>
+    <input id="age"
+           type="number">
+
+    <label for="nationality">Obywatelstwo:</label>
+    <select id="nationality">
+      <option>polskie</option>
+      <option>british</option>
+      <option>deutsch</option>
+    </select>
+
+    <button onclick="sendFormToTable()" type="button">Zapisz</button>
+
+  </form>
+
+
+  <script src="form-example.js"></script>
+<!--
+ <tr>
+    <td>name</td>
+    <td>surname</td>
+    <td>age</td>
+    <td>nationality</td>
+ </tr>
+-->
+
+</body>
+</html>
